@@ -34,7 +34,9 @@ public class SecurityConfig {
     private final JwtAuthenticationFilter jwtAuthFilter;
     private final CustomUserDetailsService userDetailsService;
 
-    @Value("${speakeasy.cors.allowed-origins:http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000}")
+    
+@Value("${speakeasy.cors.allowed-origins:http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000,https://24eg105r40.netlify.app}")
+
     private String allowedOrigins;
 
     @Bean
